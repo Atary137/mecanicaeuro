@@ -1,0 +1,13 @@
+# Robots.txt for Mecânica Euro
+# https://mecanicaeuro.com.br
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mecanicaeuro.com.br/sitemap.xml
+
+# Block unnecessary paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
