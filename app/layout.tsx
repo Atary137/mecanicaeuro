@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.ico',
-        href: '/favicon.ico',
+        url: '/icon.svg',
+        type: 'image/svg+xml',
       },
     ],
     apple: [
       {
-        url: '/favicon.ico',
-        href: '/favicon.ico',
+        url: '/icon.svg',
+        type: 'image/svg+xml',
       },
     ],
   },
@@ -42,31 +42,43 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Mecânica Euro",
+    "image": "https://mecanicaeuro.com.br/icon.svg",
+    "url": "https://mecanicaeuro.com.br",
+    "telephone": "+5541999491129",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Rui Barbosa, 10703",
+      "addressLocality": "São José dos Pinhais",
+      "addressRegion": "PR",
+      "postalCode": "83025-010",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -25.55095513874384,
+      "longitude": -49.20828015481486
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ]
+  };
+
   return (
     <html lang="pt-BR">
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AutoRepair",
-              "name": "Mecânica Euro",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Avenida Rui Barbosa, 10703",
-                "addressLocality": "São José dos Pinhais",
-                "postalCode": "83025-010",
-                "addressCountry": "BR"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": -25.55095513874384,
-                "longitude": -49.20828015481486
-              }
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </body>
     </html>
