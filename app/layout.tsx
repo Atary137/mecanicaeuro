@@ -73,14 +73,15 @@ export const metadata: Metadata = {
     description: 'Oficina especializada em veículos nacionais e importados. Diagnóstico computadorizado desde 2008.',
     images: ['/images/logo-euro.png'],
   },
-  verification: {
+verification: {
     google: 'CfIgK8yCaNNATe06yuAwh332nbg3sW9Xn42cjXHt0B4',
   },
   category: 'automotive',
-icons: {
+  icons: {
     icon: '/favicon.ico',
     apple: '/favicon.ico',
   },
+}
 
 export const viewport: Viewport = {
   themeColor: '#e5511e',
