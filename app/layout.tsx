@@ -77,24 +77,10 @@ export const metadata: Metadata = {
     google: 'CfIgK8yCaNNATe06yuAwh332nbg3sW9Xn42cjXHt0B4',
   },
   category: 'automotive',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
   },
-}
 
 export const viewport: Viewport = {
   themeColor: '#e5511e',
