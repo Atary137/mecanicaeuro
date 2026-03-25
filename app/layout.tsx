@@ -21,17 +21,17 @@ export const metadata: Metadata = {
   verification: {
     google: 'CfIgK8yCaNNATe06yuAwh332nbg3sW9Xn42cjXHt0B4',
   },
-  icons: {
+icons: {
     icon: [
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/icon.png',
+        type: 'image/png',
       },
     ],
     apple: [
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/icon.png',
+        type: 'image/png',
       },
     ],
   },
