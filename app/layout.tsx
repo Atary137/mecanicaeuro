@@ -22,8 +22,18 @@ export const metadata: Metadata = {
     google: 'CfIgK8yCaNNATe06yuAwh332nbg3sW9Xn42cjXHt0B4',
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/favicon.ico',
+    icon: [
+      {
+        url: '/favicon.ico',
+        href: '/favicon.ico',
+      },
+    ],
+    apple: [
+      {
+        url: '/favicon.ico',
+        href: '/favicon.ico',
+      },
+    ],
   },
 }
 
