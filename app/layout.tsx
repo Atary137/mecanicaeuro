@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     images: ['/images/logo-euro.png'],
   },
   verification: {
-    google: 'your-google-site-verification-code',
+    google: 'CfIgK8yCaNNATe06yuAwh332nbg3sW9Xn42cjXHt0B4',
   },
   category: 'automotive',
   icons: {
