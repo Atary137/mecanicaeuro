@@ -99,7 +99,6 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
 
-        {/* SEO LOCAL */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
