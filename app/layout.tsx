@@ -21,23 +21,23 @@ export const metadata: Metadata = {
   verification: {
     google: 'CfIgK8yCaNNATe06yuAwh332nbg3sW9Xn42cjXHt0B4',
   },
-icons: {
+  icons: {
     icon: [
       {
-        url: '/favicon-96x96.png',
+        url: '/favicon-96x96.png?v=4',
         sizes: '96x96',
         type: 'image/png',
       },
       {
-        url: '/icon.png',
+        url: '/icon.png?v=4',
         sizes: '144x144',
         type: 'image/png',
       },
     ],
     apple: [
       {
-        url: '/icon.png',
-        sizes: '144x144',
+        url: '/icon.png?v=4',
+        sizes: '180x180',
         type: 'image/png',
       },
     ],
@@ -53,7 +53,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "Mecânica Euro",
-    "image": "https://mecanicaeuro.com.br/icon.svg",
+    "image": "https://mecanicaeuro.com.br/icon.png",
     "url": "https://mecanicaeuro.com.br",
     "telephone": "+5541999491129",
     "address": {
