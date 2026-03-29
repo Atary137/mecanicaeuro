@@ -17,26 +17,17 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mecanicaeuro.com.br'),
   title: 'Mecânica Euro | Especialistas em Nacionais e Importados',
   description: 'Oficina mecânica especializada em veículos nacionais e importados. Diagnóstico computadorizado desde 2008 em São José dos Pinhais, PR.',
-  keywords: ['mecânica', 'São José dos Pinhais', 'Mecânica Euro'],
-  verification: {
-    google: 'CfIgK8yCaNNATe06yuAwh332nbg3sW9Xn42cjXHt0B4',
-  },
   icons: {
     icon: [
       {
-        url: '/favicon-96x96.png?v=4',
+        url: '/favicon-96x96.png?v=5', // O ?v=5 avisa o Google que a imagem mudou
         sizes: '96x96',
-        type: 'image/png',
-      },
-      {
-        url: '/icon.png?v=4',
-        sizes: '144x144',
         type: 'image/png',
       },
     ],
     apple: [
       {
-        url: '/icon.png?v=4',
+        url: '/icon.png?v=5',
         sizes: '180x180',
         type: 'image/png',
       },
