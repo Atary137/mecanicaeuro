@@ -14,20 +14,24 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mecanicaeuro.com.br'),
+  // Remova o metadataBase se estiver dando conflito ou garanta que é a URL principal
+  metadataBase: new URL('https://mecanicaeuro.com.br'), 
   title: 'Mecânica Euro | Especialistas em Nacionais e Importados',
-  description: 'Oficina mecânica especializada em veículos nacionais e importados. Diagnóstico computadorizado desde 2008 em São José dos Pinhais, PR.',
+  description: 'Oficina mecânica especializada em veículos nacionais e importados em São José dos Pinhais, PR.',
+  alternates: {
+    canonical: '/', // Isso resolve o erro de redirecionamento avisando qual a URL certa
+  },
   icons: {
     icon: [
       {
-        url: '/favicon-96x96.png?v=5', // O ?v=5 avisa o Google que a imagem mudou
+        url: '/favicon-96x96.png',
         sizes: '96x96',
         type: 'image/png',
       },
     ],
     apple: [
       {
-        url: '/icon.png?v=5',
+        url: '/icon.png',
         sizes: '180x180',
         type: 'image/png',
       },
