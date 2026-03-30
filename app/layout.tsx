@@ -14,12 +14,11 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  // Remova o metadataBase se estiver dando conflito ou garanta que é a URL principal
-  metadataBase: new URL('https://mecanicaeuro.com.br'), 
+  metadataBase: new URL('https://www.mecanicaeuro.com.br'), 
   title: 'Mecânica Euro | Especialistas em Nacionais e Importados',
   description: 'Oficina mecânica especializada em veículos nacionais e importados em São José dos Pinhais, PR.',
   alternates: {
-    canonical: '/', // Isso resolve o erro de redirecionamento avisando qual a URL certa
+    canonical: 'https://www.mecanicaeuro.com.br',
   },
   icons: {
     icon: [
@@ -48,8 +47,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "Mecânica Euro",
-    "image": "https://mecanicaeuro.com.br/icon.png",
-    "url": "https://mecanicaeuro.com.br",
+    "image": "https://www.mecanicaeuro.com.br/icon.png",
+    "url": "https://www.mecanicaeuro.com.br",
     "telephone": "+5541999491129",
     "address": {
       "@type": "PostalAddress",
